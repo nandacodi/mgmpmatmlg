@@ -9,7 +9,7 @@
     <meta name="generator" content="Hugo 0.122.0">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link href="styles.css" rel="stylesheet">
-    <title>Materi 2</title>
+    <title>Materi 3</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-fixed/">
 
@@ -18,35 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script>
-            <!--Function ini berisi kode untuk mengendalikan respon jawaban siswa terhadap kuis-->
-            x=0;
-            function quiz(event) {
-                // Get the element which triggered the event
-                var choices = event.target.parentElement.querySelectorAll('.choice');
-                choices.forEach(function(choice){
-                    choice.style.backgroundColor='#d9edff';
-                    });
-                let button = event.currentTarget;
-                console.log(button.dataset.latex);
-                // Check if the element's inner HTML matches expected answer
-                if(button.dataset.value == '1'){
-                    button.style.backgroundColor = 'Yellow';
-                    x=x+10;
-                }
-                else {
-                    button.style.backgroundColor = 'Yellow';
-                }
-            }
-    
-            function result(event) {
-            let button = event.currentTarget;
-            console.log(button);
-            button.parentElement.querySelector('.feedback').innerHTML = 'your score is '+ x +'/20' ;
-            }
-  
-        </script>
-
+        
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -202,11 +174,11 @@
           <a class="nav-link" href="materi1.html">Materi 1</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="materi2.html">Materi 2</a>
+          <a class="nav-link" href="materi2.html">Materi 2</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="materi3.html">Materi 3</a>
-      </li>
+            <a class="nav-link active" href="materi3.html">Materi 3</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="gallery.html">Gallery Learning</a>
       </li>
@@ -217,43 +189,6 @@
 
 <main>
     <h1>Hello, world! Saya mau belajar membuat Kuis dengan HTML dan JavaScript</h1>
-
-
-    <h2 style="text-align: center;  color:green">QUIZ</h2>
-      On this page you are asked to take a quiz which is an assessment of the material you studied on the sidebar pages.
-      Just enjoy this assesment, have a luck!!
-        <div style="background-color:#FFE6E6; margin-top: 2rem;border-radius: 0.5rem;">
-            <div class="container">
-                <div style="padding: 0.5rem 2rem 1rem 2rem;"">
-                    <h2>#1 TULISAN INI TIDAK PAKAI CSS</h2>
-                    <hr>
-                    <h3>Find the result</h3>
-                    $$\frac{5}{17} + \frac{2}{17} =...$$
-                    <button class="choice" data-value="1" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{7}{17}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{3}{17}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{119}{17}\)</button>
-                    <button class="choice" data-value="1" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{119}{289}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{7}{34}\)</button>
-                    <p class="feedback"></p>
-                </div>
-                <div class="section">
-                    <h2>#2 Ini pakai css</h2>
-                    <hr>
-                    <h3>Find the result</h3>
-                    $$\frac{3}{8} - \frac{5}{2} =...$$
-                    <button class="choice" data-value="1" style="width:100px; height:40px" onclick="quiz(event)">\(-\frac{1}{24}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{1}{24}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(-\frac{2}{6}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(\frac{2}{6}\)</button>
-                    <button class="choice" style="width:100px; height:40px" onclick="quiz(event)">\(-\frac{34}{16}\)</button>
-                    <p class="feedback"></p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <button style="display: block; width:100px; height:40px; margin: auto; margin-top:2rem; background-color:rgb(255, 200, 50);" onclick="result(event)">SUBMIT</button>
-            <h3 style="padding:2rem; text-align:center;" class="feedback"></h3>
-        </div>
 </main>
 <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
